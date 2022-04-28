@@ -5,7 +5,7 @@
     <title>paginaIniziale</title>
   </head>
   <body>
-    <%@include file="paginaIniziale.html"%>
+    <%@include file="paginaIniziale.jsp"%>
 
     <p id = "testo">  Lezioni presenza:</p>
 
@@ -27,4 +27,7 @@
         <a href="#">BATTERIA</a>
       </div>
   </body>
+  <div style = "margin-top : 300px;">
+  <%@include file="footer.html"%>
+  </div>
 </html>

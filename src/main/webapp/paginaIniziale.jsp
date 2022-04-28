@@ -1,34 +1,31 @@
-<%@ page import="model.Utente" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: anzel
-  Date: 01/04/2022
-  Time: 21:08
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
-    <head>
-        <!-- il link necessario per l'incona del carrello-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <link rel ="stylesheet" href = "css/paginaIniziale.css">
+    <title>paginaIniziale</title>
+  </head>
+  <body>
 
-        <title>PaginaIniziale</title>
-    </head>
+    <header>
+       <span>ciao Benvenuto</span>
+    </header>
 
-    <body>
-    <%
+    <div class = "ContenitoreImmagineGrandeCentrale">
+      <img src ="images/Logo.png" >
+    </div>
 
-        Utente utente = (Utente)request.getAttribute("utente") ;
-        if(utente == null)
-        {
-    %> <h3>UTENTE NON REGISTRATO</h3>  <%
-    }
-    else
-        {
-            String nome = utente.getNome() ;
-            %> SALVE <%=nome%><%
-        }
-    %>
+    <div class = "Menu">
+      <ul>
+        <li><a href="paginaIniziale.jsp">Home</a></li>
+        <li><a href="Corsi.jsp">Corsi</a></li>
+        <li><a href="#">Gatto3</a></li>
+        <li><a href="#">Gatto4</a></li>
+        <li><a href="ChiSiamo.jsp">Chi Siamo</a></li>
+        <li><a href="#">Gatto6</a></li>
+        <li><a href="#">Gatto7</a></li>
+      </ul>
+    </div>
 
-    </body>
+  <%@include file="footer.html"%>
+  </body>
 </html>

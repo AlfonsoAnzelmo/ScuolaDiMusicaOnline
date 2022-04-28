@@ -27,4 +27,7 @@
         <a href="#">BATTERIA</a>
       </div>
   </body>
+  <div style = "margin-top : 300px;">
+  <%@include file="footer.html"%>
+  </div>
 </html>

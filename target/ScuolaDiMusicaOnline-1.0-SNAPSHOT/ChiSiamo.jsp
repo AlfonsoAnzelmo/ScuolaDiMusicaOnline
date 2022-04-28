@@ -62,6 +62,8 @@
 
       </div>
   </div>
-
+  <div style="margin-top: 1300px"><!--necessario questa pagina si sottopone alle immagini di sopra-->
+    <%@include file="footer.html"%>
+  </div>
   </body>
 </html>
