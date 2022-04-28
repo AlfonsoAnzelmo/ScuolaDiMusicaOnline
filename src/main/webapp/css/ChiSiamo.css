@@ -1,0 +1,34 @@
+.contenitoreDelContenitore {
+  margin: 0 20px;
+}
+.contenitore {
+  display: inline;
+  width: 100%;
+  margin: 5px;
+  background-color: blue;
+    }
+
+.immagini{
+  border: 2px solid #a11b28;
+  float :right;
+  text-align: center;
+  width:48%;
+  margin-bottom: 35px;
+  height: 400px;
+}
+.immagini img{
+  margin-top:10%;
+  width:90%;
+  height: 300px;
+}
+.testoInvogliante{
+  text-align: center;
+  height: 400px;
+  background: #EFEFEF;
+  width: 48%;
+  margin-bottom: 35px;
+}
+.testoInvogliante p,h2{
+  margin:10%;/*non funziona per la p e h2*/
+  color:blue;
+}

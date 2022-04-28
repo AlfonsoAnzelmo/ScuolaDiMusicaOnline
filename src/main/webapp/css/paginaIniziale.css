@@ -1,0 +1,58 @@
+html{
+
+}
+body{
+  margin : 0px;
+}
+
+header{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  background: #a11b28;
+  margin: 0px;
+  text-align: center;
+}
+
+header span{
+  padding-top: 5px;
+  display: block;
+  color: white ;
+}
+.ContenitoreImmagineGrandeCentrale{
+  width: 100%;
+  border: 1px solid;
+  text-align: center;
+  padding-top: 20px;
+  /*box-shadow: 5px 5px 10px ;*/
+}
+.ContenitoreImmagineGrandeCentrale img{
+  width: 450px;
+}
+
+.Menu{
+   top: 0;/*bisogna specificarlo forzatamente*/
+  position: -webkit- sticky;
+  position: sticky;
+  height: 50px;
+  border: 1px solid;
+  text-align: center;
+  background: #a11b28;
+}
+
+.Menu ul li {
+  padding: 10px;
+  display: inline;
+}
+.Menu ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: " DejaVu Sans Mono", monospace;
+  color: white;
+}
+
+.Menu ul li a:hover{
+  color:black;
+}

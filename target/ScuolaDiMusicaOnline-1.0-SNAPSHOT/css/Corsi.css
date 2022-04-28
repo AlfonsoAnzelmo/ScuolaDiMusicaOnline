@@ -1,0 +1,40 @@
+.EvidenziaCategiriaCorso{
+  margin:20px 20px 0 20px;
+  text-align: left;
+
+  height: 200px;
+  width: 100%;
+}
+
+#testo{
+  color:#a11b28;
+  font-weight: bold;
+  font-family: " DejaVu Sans Mono", monospace;
+  font-size: 22px;
+  margin-left: 25%;
+  margin-bottom:20px;
+  margin-top: 20px;
+}
+#testoTesto{
+  font-family: " DejaVu Sans Mono", monospace;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.EvidenziaCategiriaCorso a{
+  text-align: center;
+  display: inline-block;
+  width: 28%;
+  padding-top:30px;
+  padding-bottom: 30px;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  margin: 20px;
+  font-family: " DejaVu Sans Mono", monospace;
+
+  border:1px solid #a11b28;
+}
+.EvidenziaCategiriaCorso a:hover{
+  background-color: #a11b28;
+  color:white;
+}
