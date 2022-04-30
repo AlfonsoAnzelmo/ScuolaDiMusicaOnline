@@ -18,7 +18,7 @@
       <ul>
         <li><a href="paginaIniziale.jsp">Home</a></li>
         <li><a href="Corsi.jsp">Corsi</a></li>
-        <li><a href="#">Gatto3</a></li>
+        <li><a href="Categorie">Prodotti</a></li>
         <li><a href="#">Gatto4</a></li>
         <li><a href="ChiSiamo.jsp">Chi Siamo</a></li>
         <li><a href="#">Gatto6</a></li>
