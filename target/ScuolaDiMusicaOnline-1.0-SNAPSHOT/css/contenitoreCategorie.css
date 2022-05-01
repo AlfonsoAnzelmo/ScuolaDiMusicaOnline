@@ -1,0 +1,19 @@
+.contenitoreCategorie{
+    display: inline;
+    text-align: left;
+
+    margin-left: 15%;
+    padding-top: 100px;
+    height: 200px;
+
+}
+
+.contenitoreCategorie img{
+    padding-top:100px ;
+    border-bottom: 2px solid;
+}
+
+.contenitoreCategorie b{
+    font-size: 20px;
+    border-bottom: 2px solid;
+}

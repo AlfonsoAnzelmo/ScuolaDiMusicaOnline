@@ -5,7 +5,7 @@
     <title>paginaIniziale</title>
   </head>
   <body>
-  <%@include file="paginaIniziale.html"%>
+  <%@include file="paginaIniziale.jsp"%>
 
   <div class ="contenitoreDelContenitore">
       <div class = "contenitore">
