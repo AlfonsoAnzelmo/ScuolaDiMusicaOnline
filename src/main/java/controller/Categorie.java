@@ -7,8 +7,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.CategorieEprodotti.CategorieBean;
-import model.CategorieEprodotti.CategorieDAO;
+import model.Categorie.CategorieBean;
+import model.Categorie.CategorieDAO;
 
 import java.io.IOException;
 import java.util.ArrayList;

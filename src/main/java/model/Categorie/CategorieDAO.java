@@ -1,4 +1,4 @@
-package model.CategorieEprodotti;
+package model.Categorie;
 
 import model.ConPool;
 

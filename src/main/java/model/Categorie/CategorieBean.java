@@ -1,4 +1,4 @@
-package model.CategorieEprodotti;
+package model.Categorie;
 
 public class CategorieBean {
 
