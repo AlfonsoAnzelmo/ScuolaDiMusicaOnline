@@ -1,6 +1,6 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="controller.Categorie" %>
-<%@ page import="model.Categorie.CategorieBean" %><%--
+<%@ page import="controller.CategorieStrumento" %>
+<%@ page import="model.CategorieStrumento.CategorieStrumentoBean" %><%--
   Created by IntelliJ IDEA.
   User: anzel
   Date: 30/04/2022
@@ -18,7 +18,7 @@
     <%@include file="paginaIniziale.jsp"%>
 
     <%
-      ArrayList<CategorieBean> categories = (ArrayList<CategorieBean>) request.getAttribute("categorie") ;
+      ArrayList<CategorieStrumentoBean> categories = (ArrayList<CategorieStrumentoBean>) request.getAttribute("CategorieStrumento") ;
       int i ;
       for(i = 0 ; i < categories.size() ; i++)
       {%>
@@ -26,7 +26,7 @@
 
 <b><%=categories.get(i).getNome()%></b>
 <a href="MostraProdotti?nomeProdotto=<%=categories.get(i).getNome()%>">
-    <img src = "downloadImageCategoria?id=<%=categories.get(i).getId()%>" height="150px" width="150px">
+    <img src = "<%=categories.get(i).getPercorso()%>" height="150px" width="150px">
 </a>
   <% } %>
 </div>

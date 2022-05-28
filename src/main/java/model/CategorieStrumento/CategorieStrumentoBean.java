@@ -1,6 +1,6 @@
-package model.Categorie;
+package model.CategorieStrumento;
 
-public class CategorieBean {
+public class CategorieStrumentoBean {
 
     public String getNome() {
         return nome;
@@ -18,6 +18,14 @@ public class CategorieBean {
         return id;
     }
 
+    public String getPercorso() {
+        return percorso;
+    }
+
+    public void setPercorso(String percorso) {
+        this.percorso = percorso;
+    }
+
     private int id ;
-    private String nome ;
+    private String nome , percorso ;
 }

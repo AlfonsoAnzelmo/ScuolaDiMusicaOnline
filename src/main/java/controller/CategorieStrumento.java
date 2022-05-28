@@ -7,26 +7,26 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.Categorie.CategorieBean;
-import model.Categorie.CategorieDAO;
+import model.CategorieStrumento.CategorieStrumentoBean;
+import model.CategorieStrumento.CategorieStrumentoDAO;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-@WebServlet(name = "Categorie", value = "/Categorie")
+@WebServlet(name = "CategorieStrumento", value = "/CategorieStrumento")
 
 
-public class Categorie extends HttpServlet{
+public class CategorieStrumento extends HttpServlet{
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
 
-        CategorieDAO categorieDAO = new CategorieDAO() ;
+        CategorieStrumentoDAO categorieDAO = new CategorieStrumentoDAO() ;
 
-        ArrayList<CategorieBean> categorie = categorieDAO.doRetrieveAllCategories() ;
+        ArrayList<CategorieStrumentoBean> CategorieStrumento = categorieDAO.doRetrieveAllCategories() ;
 
-        request.setAttribute("categorie" , categorie);
-        RequestDispatcher rd = request.getRequestDispatcher("Categorie.jsp") ;
+        request.setAttribute("CategorieStrumento" , CategorieStrumento);
+        RequestDispatcher rd = request.getRequestDispatcher("CategorieStrumento.jsp") ;
         rd.forward(request , response) ;
 
     }
