@@ -1,23 +1,7 @@
 package model.StrumentiMusicali;
 
-import java.io.InputStream;
 
 public class StrumentiMusicali {
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getModello() {
-        return modello;
-    }
-
-    public void setModello(String modello) {
-        this.modello = modello;
-    }
 
     public int getCodice() {
         return codice;
@@ -27,12 +11,12 @@ public class StrumentiMusicali {
         this.codice = codice;
     }
 
-    public int getCategoria() {
-        return categoria;
+    public int getCategoriaId() {
+        return categoriaId;
     }
 
-    public void setCategoria(int categoria) {
-        this.categoria = categoria;
+    public void setCategoriaId(int categoriaId) {
+        this.categoriaId = categoriaId;
     }
 
     public int getQuantita() {
@@ -43,6 +27,22 @@ public class StrumentiMusicali {
         this.quantita = quantita;
     }
 
+    public String getModello() {
+        return modello;
+    }
+
+    public void setModello(String modello) {
+        this.modello = modello;
+    }
+
+    public String getImmaginePrincipalePercorso() {
+        return immaginePrincipalePercorso;
+    }
+
+    public void setImmaginePrincipalePercorso(String immaginePrincipalePercorso) {
+        this.immaginePrincipalePercorso = immaginePrincipalePercorso;
+    }
+
     public double getPrezzo() {
         return prezzo;
     }
@@ -51,31 +51,9 @@ public class StrumentiMusicali {
         this.prezzo = prezzo;
     }
 
-    public int getImmagineId() {
-        return immagineId;
-    }
-
-    public void setImmagineId(int immagineId) {
-        this.immagineId = immagineId;
-    }
-    public InputStream getImmaginePrincipale() {
-        return immaginePrincipale;
-    }
-
-    public void setImmaginePrincipale(InputStream immaginePrincipale) {
-        this.immaginePrincipale = immaginePrincipale;
-    }
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    private String nome , modello , tipo ;
-    private int codice, categoria , quantita , immagineId ;
+    private int codice , categoriaId , quantita;
+    private String modello , immaginePrincipalePercorso ;
     private double prezzo ;
-    private InputStream immaginePrincipale ;
 
 
 }

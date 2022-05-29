@@ -20,10 +20,10 @@ public class MostraProdotti extends HttpServlet {
     }
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String nome = request.getParameter("nomeProdotto") ;
+        int categoriaId = Integer.parseInt(request.getParameter("categoriaId")) ;
 
         StrumentiMusicaliDAO musicaliDAO = new StrumentiMusicaliDAO() ;
-        ArrayList<StrumentiMusicali> musicali = musicaliDAO.doRetrieveByNome(nome) ;
+        ArrayList<StrumentiMusicali> musicali = musicaliDAO.doRetrieveByCategoriaId(categoriaId) ;
 
         request.setAttribute("musicali" , musicali);
 

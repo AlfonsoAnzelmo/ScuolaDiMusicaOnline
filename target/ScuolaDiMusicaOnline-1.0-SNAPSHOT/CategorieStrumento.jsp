@@ -12,7 +12,7 @@
 <html>
 <head>
     <title>Categorie</title>
-    <link rel = "stylesheet" href="css/stileCategorie.css">
+    <link rel = "stylesheet" href="css/categorieStrumento.css">
 </head>
 <body>
     <%@include file="paginaIniziale.jsp"%>
@@ -25,8 +25,7 @@
     <div class = "contenitoreCategorie">
 
 <b><%=categories.get(i).getNome()%></b>
-<a href="MostraProdotti?nomeProdotto=<%=categories.get(i).getNome()%>">
-    <%=categories.get(i).getPercorso()%>
+<a href="MostraProdotti?categoriaId=<%=categories.get(i).getId()%>">
     <img src = "<%=categories.get(i).getPercorso()%>" height="150px" width="150px">
 </a>
   <% } %>
@@ -34,6 +33,6 @@
 <div style="margin-top:100px">
 
 </div>
-<%@include file="footer.html"%>  -
+<%@include file="footer.html"%>
 </body>
 </html>
