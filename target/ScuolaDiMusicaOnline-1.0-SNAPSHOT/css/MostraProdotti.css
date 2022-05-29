@@ -1,0 +1,35 @@
+.contenitoreLista{
+    text-align: right;
+    border: 4px solid;
+
+}
+.contenitore-strumentoMusicale{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: block;
+    border: 1px solid;
+    border-radius: 10px 10px 10px 10px;
+    width: 54%;
+    margin-left: 40%;
+    background: #EFEFEF;
+    text-align: left;
+}
+
+.contenitore-strumentoMusicale img{
+    border: 2px solid;
+    margin-left: 20%;
+}
+
+.strumentoMusicale{
+    display: flex;
+}
+.strumentoMusicale > img , label
+{
+    margin: 10px;
+}
+.strumentoMusicale > label{
+    font-size: 20px;
+    font-weight: bold ;
+    margin-top: 20px;
+    border: 1px solid;
+}
