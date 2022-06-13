@@ -1,8 +1,26 @@
+.html{
+    overflow: hidden;
+}
+.contenitoreFiltro{
+    position: sticky;
+    top:80px;
+
+    left: 45px;
+    height: 800px;
+    width: 300px ;
+    background: blue;
+    float: left;
+
+}
+
+
+
 .contenitoreLista{
     text-align: right;
     border: 4px solid;
 
 }
+
 .contenitore-strumentoMusicale{
     margin-top:10px;
     margin-bottom:10px;

@@ -22,7 +22,7 @@
       int i ;
       for(i = 0 ; i < categories.size() ; i++)
       {%>
-    <div class = "contenitoreCategorie">
+    <div class = "contenitoreCategorie" style="margin-left:12%; margin-right: 12%">
 
 <b><%=categories.get(i).getNome()%></b>
 <a href="MostraProdotti?categoriaId=<%=categories.get(i).getId()%>">

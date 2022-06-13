@@ -14,7 +14,11 @@
 </head>
 <body>
 <%@include file="paginaIniziale.jsp"%>
+
     <div class ="contenitoreLista">
+       <div class = "contenitoreFiltro" >
+           tymtsdcsdvj oidsb vosbvjosbvbsbusbvuisbvbodsbvs
+       </div>
     <%
         ArrayList<StrumentiMusicali> musicali = (ArrayList<StrumentiMusicali>) request.getAttribute("musicali");
         int i ;
