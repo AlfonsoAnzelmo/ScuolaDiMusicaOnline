@@ -27,27 +27,27 @@
     Utente utente = carrelli.getUtente() ;
     %>
     <span id="messaggioSaluto">ciao <%=utente.getNome()%> Questo è il tuo carrello</span>
-
+<div class = "contenitoreFlex">
     <%for(i = 0 ; i < strumentiMusicali.size()  ; i++)
     {%>
-        <div class = "contenitoreFlex">
+
             <div>
 
                 <img src = "<%=strumentiMusicali.get(i).getImmaginePrincipalePercorso()%>">
             </div>
-            <div>
+            <div class="secDiv">
 
-                    Modello
-                        <%=strumentiMusicali.get(i).getModello()%>
+                     <p id = "modello">Modello
+                     <%=strumentiMusicali.get(i).getModello()%></p>
 
-                    Prezzo
-                        <%=strumentiMusicali.get(i).getPrezzo()%>
+                        <p id = "prezzo"> Prezzo
+                        <%=strumentiMusicali.get(i).getPrezzo()%></p>
 
-                        <a href = "RimuoviProdottoCarrello">rimuovi</a>
-                        <a href = "AggiungiAiPreferitiCarrello">AggiungiAiPreferiti</a>
+                        <p><a href = "RimuoviProdottoCarrello">Rimuovi dal Carrello</a></p>
+                        <p><a href = "AggiungiAiPreferitiCarrello">AggiungiAiPreferiti</a></p>
 
-                        Quantita
-                        <select>
+                       <p>Quantita
+                        <select value = "quantita" id = "quantita">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -58,12 +58,16 @@
                             <option>8</option>
                             <option>8</option>
                             <option>10+</option>
-                        </select>
-
+                        </select>  </p>
+                       <a id = "acquista" href ="Acquista">Acquista</a>
             </div>
-        </div>
-    <%}%>
 
-    <%@include file="footer.html"%>
+
+    <%}%>
+</div>
+<!-- eh ! qui l'unica è calcolarsi con js quanto è grande contenitoreFlex per uscirne
+        perchè il flex finisce sopra il footer e bisogna spostarlo piu in basso
+        man mano gl'oggetti del carrello aumentano-->
+<% //@include file="footer.html"%>
 </body>
 </html>
