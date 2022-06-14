@@ -47,8 +47,8 @@ public class CarrelloDAO {
 
                 Utente utente = new Utente() ;
                 utente.setId(rs.getInt("ID"));
-                utente.setNome(rs.getString("Nome")) ;
-                utente.setCognome(rs.getString("Cognome")) ;
+                utente.setNome(rs.getString("u.nome")) ;
+                utente.setCognome(rs.getString("u.cognome")) ;
                 utente.setDataNascita(rs.getString("DataNascita")); ;
                 utente.setEmail(rs.getString("Email")); ;
                 utente.setPassword(rs.getString("Password")); ;

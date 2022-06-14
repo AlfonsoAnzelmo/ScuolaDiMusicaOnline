@@ -1,0 +1,19 @@
+body{
+
+}
+
+.contenitoreFlex{
+    width: 70%;
+    display: flex;
+    margin: 20px;
+    height: 350px;
+    flex-wrap: wrap;
+    /*justify-content: flex-start; di default*/
+    border-bottom: 2px solid ;
+}
+
+.contenitoreFlex > div{
+    width: 300px;
+    padding: 20px 10px;
+    text-align: center  ;
+}
