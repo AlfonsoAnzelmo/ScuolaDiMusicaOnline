@@ -1,0 +1,74 @@
+body{
+
+}
+
+.contenitoreFlex{
+
+    display: flex;
+    margin: 20px;
+    height: 350px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    /*justify-content: flex-start; di default*/
+
+
+}
+
+.secDiv{
+    text-align: left;
+}
+.contenitoreFlex img{
+    border: 2px solid ;
+    margin-top:30px;
+}
+
+
+.contenitoreFlex > div{
+    width: 300px;
+    padding: 20px 10px;
+    text-align: center  ;
+}
+
+.contenitoreFlex > p > select {
+    text-align: center;
+}
+.contenitoreFlex p  {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: " DejaVu Sans Mono", monospace;
+    color: #a11b28;
+}
+
+.contenitoreFlex a {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: " DejaVu Sans Mono", monospace;
+    color : purple ;
+}
+/*
+ * bisogna pensare al contrario se la larghezza dello schermo
+ * è superiore di 600px la proprietà è FALSA!
+ *
+ * @media only screen and (max-width: 600px) {
+ *  body {
+ *     background-color: lightblue;
+ *  }
+ * }
+*/
+
+@media only screen and (max-width: 1338px) {
+    .contenitoreFlex
+    {
+        flex-direction: row;
+
+    }
+    .secDiv{
+        margin-right: 30%;
+    }
+}
+
+#acquista{
+    padding: 20px;
+    border: 1px solid #a11b28;
+}
