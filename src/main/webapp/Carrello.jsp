@@ -21,8 +21,7 @@
 
 <%
     CarrelloBean carrelli = (CarrelloBean) request.getAttribute("carrelli");
-    int i ;
-    ArrayList<StrumentiMusicali> strumentiMusicali = carrelli.getStrumentiMusicali() ;
+    int i ;rayList<StrumentiMusicali> strumentiMusicali = carrelli.getStrumentiMusicali() ;
     ArrayList<Corso> corsi = carrelli.getCorsi() ;
     Utente utente = carrelli.getUtente() ;
     %>

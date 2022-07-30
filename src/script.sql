@@ -1,3 +1,4 @@
+use scuoladimusicavirtuale;
 create table brano
 (
     Titolo           varchar(20) not null
