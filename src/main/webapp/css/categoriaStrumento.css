@@ -1,0 +1,14 @@
+.contenitoreCategorie{
+    display: flex;
+    flex-wrap:wrap;
+    text-align: left;
+    width: 100%;
+}
+
+.contenitoreCategorie > div{
+    text-align:center;
+    margin:20px;
+    width: 300px;
+    /*max-width:500px;width: 100%;*/
+    border:1px solid;
+}

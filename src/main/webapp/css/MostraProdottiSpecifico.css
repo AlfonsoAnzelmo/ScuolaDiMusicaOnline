@@ -1,0 +1,35 @@
+
+
+html{
+    margin: 0px;padding: 0px;
+}
+
+/*al posto di auto si puo inserire una dim in px ma sarà una dim fissa
+infatti se alla prima riga inserisci 100px noti che le immagini si 
+sovrappongono*/
+.grid-contenitore{
+    height:500px;
+    width:460px;
+    display:grid;
+    grid-template-columns:auto  auto auto ;
+    grid-template-rows: 100px 100px  ;
+    gap:20px 10px ;/*gap sia tra le righe che tra le colnne*/
+}
+/*la prima immagine occupa  prima linea  alle settima linea (colonne)*/
+.principale{
+    grid-column-start:1;
+    grid-column-end: 5;
+    grid-row-start:1;
+    grid-row-end: 4;
+
+}
+
+.immaginiSpecifiche img{
+    height:100px;
+    border:6px solid #a11b28;
+}
+.principale img{
+    height:400px;
+    width:300px ;
+    border:6px solid #a11b28;
+}

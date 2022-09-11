@@ -1,19 +1,10 @@
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="controller.CategorieStrumento" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page import="model.CategorieStrumento.CategorieStrumentoBean" %><%--
-  Created by IntelliJ IDEA.
-  User: anzel
-  Date: 30/04/2022
-  Time: 21:18
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"  %>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Categorie</title>
-    <link rel = "stylesheet" href="css/categorieStrumento.css">
+    <link rel = "stylesheet" href="css/categoriaStrumento.css">
 </head>
 <body>
     <%@include file="paginaIniziale.jsp"%>
@@ -22,14 +13,16 @@
 
          <c:forEach var = "elemento" items = "${CategorieStrumento}">
             <div>
+                <a href="MostraProdotti?categoriaId=<c:out value = "${elemento.id}"></c:out>">
                 <div>
-                    <c:out value = "${elemento.getNome()}"></c:out>
+                    <c:out value = "${elemento.nome}"></c:out>
                 </div>
                 <div>
-                    <a href="MostraProdotti?categoriaId=<c:out value = "${elemento.getId()}"></c:out>">
-                        <img src = "<c:out value = "${elemento.getPercorso()}"></c:out>" height="150px" width="150px">
-                    </a>
+
+                        <img src = "<c:out value = "${elemento.percorso}"></c:out>" height="150px" width="150px">
+
                 </div>
+                </a>
             </div>
         </c:forEach>
     </div>

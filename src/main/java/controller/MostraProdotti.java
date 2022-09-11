@@ -14,10 +14,7 @@ import java.util.ArrayList;
 
 @WebServlet(name = "MostraProdotti", value = "/MostraProdotti")
 public class MostraProdotti extends HttpServlet {
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws IOException, ServletException {
-        doGet(request, response);
-    }
+
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         int categoriaId = Integer.parseInt(request.getParameter("categoriaId")) ;
@@ -29,5 +26,10 @@ public class MostraProdotti extends HttpServlet {
 
         RequestDispatcher rd = request.getRequestDispatcher("MostraProdotto.jsp") ;
         rd.forward(request , response) ;
+    }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws IOException, ServletException {
+        doGet(request, response);
     }
 }
